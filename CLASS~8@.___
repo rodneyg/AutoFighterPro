@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/bergCoder1273.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/install.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/JGoodies-forms-1.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/JGoodies-looks-2.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/nexus21.458.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/org.eclipse.core.commands_3.5.0.I20090525-2000.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/org.eclipse.equinox.common_3.5.1.R35x_v20090807-1100.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/org.eclipse.jface_3.5.2.M20100120-0800.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/org.eclipse.osgi_3.5.2.R35x_v20100126.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/org.eclipse.ui.workbench_3.5.2.M20100113-0800.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/sqlitejdbc-3.6.14.2-Universal.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/swing-layout-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/swt-3.5-Mac-OSX-32bit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/swt-3.5-Mac-OSX-64bit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/swt-3.6-gtk-Solaris-32bit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/swt-3.6-Linux-GTK-32bit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/swt-3.6-Linux-GTK-64bit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/swt-3.6-Linux-Motif-32bit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/swt-3.6-Windows-32bit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/swt-3.6-Windows-64bit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rodney/Desktop/client/jars/tools.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/DreamAPI"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
