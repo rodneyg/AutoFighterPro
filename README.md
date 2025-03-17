@@ -1,6 +1,4 @@
- RuneScape Fighter Bot README body { font-family: Arial, sans-serif; line-height: 1.6; background-color: #121212; color: #f4f4f4; margin: 40px auto; max-width: 700px; padding: 20px; } h1, h2 { color: #00AEEF; } .section { margin-bottom: 25px; } ul { padding-left: 20px; } li { margin-bottom: 5px; } code { background-color: #272822; color: #fff; padding: 3px 6px; border-radius: 4px; font-family: monospace; } .highlight { color: #FF6347; font-weight: bold; }
-
-RuneScape Automated Fighter Bot
+AutoFighterPro - RuneScape Automated Fighter Bot
 ===============================
 
 **Built at Age 13** – an advanced automation bot demonstrating early proficiency in Java, user interface development, automation scripting, and entrepreneurship.
