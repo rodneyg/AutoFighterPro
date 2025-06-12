@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Coding Journey: From Runescape Bot to Entrepreneur</title>
+  <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 800px;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    header h1 {
+        text-align: center;
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+    }
+
+    section {
+        background-color: #fff;
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: #3498db;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5px;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    ul {
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+
+    pre {
+        background-color: #2d2d2d; /* Dark background for code */
+        color: #f8f8f2; /* Light text for code */
+        padding: 15px;
+        border-radius: 4px;
+        overflow-x: auto; /* Handle long lines of code */
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 0.9em;
+        border: 1px solid #555;
+    }
+
+    /* Add a wrapper for the main title if it doesn't have one, or style the existing h1 if it's in a header */
+    /* Assuming the main H1 is directly in body or in a simple header, this will target it */
+    body > header > h1 { /* More specific if needed, e.g., #mainTitle */
+        text-align: center;
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+        margin-bottom: 30px; /* Add some space below the main title */
+    }
+
+    /* Style the introduction section specifically if needed */
+    #introduction p {
+        font-size: 1.05em; /* Slightly larger text for the story */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Coding Journey: From Runescape Bot to Entrepreneur</h1>
+  </header>
+  <section id="introduction">
+    <p>AutoFighterPro - RuneScape Automated Fighter Bot</p>
+    <p><strong>Built at Age 13</strong> – an advanced automation bot demonstrating early proficiency in Java, user interface development, automation scripting, and entrepreneurship.</p>
+    <p>Overview</p>
+    <p>This bot automates core RuneScape gameplay activities including combat, looting, healing, resource management, and banking. It employs intelligent decision-making and offers real-time analytics through an interactive UI.</p>
+    <p>Main Features</p>
+    <ul>
+      <li><strong>Automated Combat:</strong> Intelligent targeting and combat strategies.</li>
+      <li><strong>Loot Management:</strong> Real-time item evaluation, optimized looting and inventory control.</li>
+      <li><strong>Resource Optimization:</strong> Automatic food management, healing mechanisms (Guthans, Bones-to-Peaches), and potion handling.</li>
+      <li><strong>Automated Banking:</strong> Efficient restocking, banking, and inventory management.</li>
+      <li><strong>Real-time UI and Analytics:</strong> Live dashboards tracking kills, loot value, and customizable themes.</li>
+      <li><strong>Advanced Movement:</strong> Pathfinding, obstacle management, and intelligent teleportation.</li>
+    </ul>
+    <p>Additional Components</p>
+    <ul>
+      <li><strong>Kill Tracking:</strong> Detailed logging and analytics of kills (Kill.java, KillManager.java).</li>
+      <li><strong>Loot Analytics:</strong> Precise tracking and valuation of loot (Loot.java, LootManager.java).</li>
+      <li><strong>Logging:</strong> Comprehensive logging system providing runtime diagnostics (Logger.java).</li>
+      <li><strong>Progress Visualization:</strong> Real-time graphical progress indicators (FighterProgressBar.java).</li>
+      <li><strong>File and Data Management:</strong> Efficient data handling, persistence, and management (IOManager.java).</li>
+      <li><strong>Changelog System:</strong> Detailed version tracking and updates (Changelogs.java, ChangelogUI.java).</li>
+      <li><strong>Monster Customization:</strong> User-defined monster settings for tailored gameplay (CustomMonsterUI.java).</li>
+      <li><strong>Interactive User Interface:</strong> Advanced graphical UI for managing and configuring bot settings (DreamFighterUI.java, UserInterfaceThread.java).</li>
+      <li><strong>Profile Management:</strong> User-specific configuration handling and profile persistence (ProfileHandler.java).</li>
+    </ul>
+    <p>Technical Skills</p>
+    <p><strong>Programming Languages:</strong> Java (Reflection, Concurrency, Swing/SWT)</p>
+    <p><strong>Technologies & Concepts:</strong> State machines, automated scripting, real-time logging, error handling, user interface design</p>
+    <p>Entrepreneurial Impact</p>
+    <p>Generated roughly <strong>$200,000</strong> from script sales (2009–2012), highlighting early entrepreneurship, technical proficiency, and market insight.</p>
+    <p>Relevance Today</p>
+    <p>This project demonstrates foundational expertise in software automation and innovation, aligning closely with current roles in AI, automation engineering, software development, and technology leadership.</p>
+  </section>
+  <section>
+    <h2>Code Highlights</h2>
+    <div>
+      <pre>
+  public void fight2() throws InterruptedException {
+	NPC mine = null;
+	if ((mine = getMyPlayer().getInteractingNPC()) == null
+		|| !isValidMonster(mine)
+		|| !getCombatUtils().isAttackable(mine)) {
+	    NPC found = getMonster();
+	    if (found != null) {
+		logStatus("Found monster, attacking");
+
+		if (clicker
+			.clickWorldObject(found, Pattern.compile(".*Attack.*",
+				Pattern.CASE_INSENSITIVE), true)) {
+		    log("Attack successful");
+		    Timer wait = new Timer(2000);
+		    while (wait.isNotUp()
+			    && (mine = getMyPlayer().getInteractingNPC()) == null) {
+			if (isMoving()) {
+			    wait.reset();
+			}
+
+			sleep(100);
+		    }
+
+		    sleepUntilNotMoving();
+		}
+	    }
+	}
+
+	if ((mine = getMyPlayer().getInteractingNPC()) != null
+		&& (isValidMonster(mine) || underAttack)
+		&& getCombatUtils().isAttackable(mine)) {
+	    logStatus("Interacting with NPC");
+
+	    startCombat = System.currentTimeMillis();
+
+	    if (waitForDeath(mine)) {
+		totalKills++;
+		log("Killed monster! Total kills: " + totalKills);
+		underAttack = false;
+
+		// ... (rest of the method) ...
+	    }
+	}
+    }
+      </pre>
+      <p>This snippet from `Fighter.java` shows part of the core combat logic. It first checks if the player is already fighting a valid monster. If not, it attempts to find and attack a new monster. Once engaged, it monitors the fight and, upon defeating the monster, increments the total kill count and proceeds to looting (handled in subsequent code not shown here). The `logStatus` calls were likely used to show the bot's current action in its interface or logs.</p>
+    </div>
+  </section>
+  <section>
+    <h2>User Interface</h2>
+    <p>The bot featured a graphical user interface (GUI) built using Java Swing, likely named `DreamFighterUI.java`. This interface allowed users to meticulously configure the bot's behavior to suit their needs. Key configurable aspects included:</p>
+    <ul>
+      <li>Selecting specific monsters to target from a list, or even adding custom monster definitions.</li>
+      <li>Managing item lists for looting (what to pick up), alchemy (what to convert to gold), and banking (what to deposit or withdraw).</li>
+      <li>Setting healing thresholds: at what health percentage to eat food, and what type of food to use and withdraw from the bank.</li>
+      <li>Configuring break handling: setting timers for the bot to pause, mimicking human-like behavior.</li>
+      <li>Toggling various combat options like using special attacks, prayers (and recharging them), or safe-spotting.</li>
+      <li>Defining fight areas by setting a center tile and a radius for the bot to operate in.</li>
+      <li>Loading and saving profiles for different configurations.</li>
+    </ul>
+    <p>This level of customization made the bot highly adaptable to different combat scenarios and user preferences, contributing to its popularity.</p>
+  </section>
+  <section>
+    <h2>Legacy and Impact</h2>
+    <p>The bot, initially a personal project named 'GenericFighter', evolved into a sophisticated tool. It was sold on platforms like RSBots.net under names such as <strong>AutoFighter Pro</strong> and <strong>DreamFighter</strong>. The author's story mentions that AutoFighter Pro alone had over 30,000 sales between early June 2009 and late October 2011, generating significant income and providing a powerful tool for many players during the last U.S. recession.</p>
+    <p>This project was more than just a cheat tool; it was the author's gateway into the world of software development, product management, and entrepreneurship. The skills honed maintaining and improving this bot laid the foundation for future ventures, including mobile apps and other software companies, as detailed in the introductory story.</p>
+  </section>
+</body>
+</html>
