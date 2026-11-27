@@ -41,7 +41,7 @@ Technical Skills
 Entrepreneurial Impact
 ----------------------
 
-Generated roughly **$200,000** from script sales (2009–2012), highlighting early entrepreneurship, technical proficiency, and market insight.
+Generated about **$500K** in revenue, of which I earned **$200K**, highlighting early entrepreneurship, technical proficiency, and market insight.
 
 Relevance Today
 ---------------
