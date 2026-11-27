@@ -47,3 +47,21 @@ Relevance Today
 ---------------
 
 This project demonstrates foundational expertise in software automation and innovation, aligning closely with current roles in AI, automation engineering, software development, and technology leadership.
+
+Videos
+------
+
+YouTube recordings of AutoFighterPro from when the bot was publicly available:
+
+- [Rsbots - AutoFighter Pro v.3](https://www.youtube.com/watch?v=mq5BnPPLCm0), 2010
+- [AutoFighterPro.avi](https://www.youtube.com/watch?v=sKPX090QK74), 2010
+- [AutoFighterPro V4 - Dagganoth Killing](https://www.youtube.com/watch?v=QLvFNIMU-_k), 2010
+- [AutoFighterPro V4 - Cow Training](https://www.youtube.com/watch?v=QCR5GfDYLpc), 2010
+- [AutoFighterPro V4 Cow Training Pt2](https://www.youtube.com/watch?v=AQIxMqVSrlo), 2010
+- [AutoFighterPro, AutoHunterPro and AutoFisherPro Running! 3 Different Runescape Account's!](https://www.youtube.com/watch?v=I4TMz2Kw1x4), 2010
+- [RsBots.net Promo video - [AutoFighter Pro]](https://www.youtube.com/watch?v=4Rs5LXbJPMg), 2010
+- [RSbots.net Auto Fighter Pro - Proof That It Works!!!!](https://www.youtube.com/watch?v=lkKagQn-wt0), 2010
+- [RSBots.net Bot Promo Video Contest Entry #2 [AutoFighter Pro]](https://www.youtube.com/watch?v=eF-mG2pRxhk), 2010
+- [AutoFighterPro Bot](https://www.youtube.com/watch?v=XqONQQVOW9M), 2010
+- [Avansies With Autofighterpro from Rsbot.net.](https://www.youtube.com/watch?v=mdq78GC1ZPM), 2011
+- [Auto Fighter Pro Guide Runescape 75k exp per hour](https://www.youtube.com/watch?v=3xbhfX58D7A), 2011
